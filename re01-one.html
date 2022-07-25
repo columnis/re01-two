@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浅余小站</title>
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            background-color:#eee;
+        }
+       /* *{
+            border:1px solid black;
+        }
+        */
+        .yinyin{
+            box-shadow:10px 10px 5px rgb(225, 219, 223) ;
+        }
+        .flex{
+            display:flex;
+        }
+        .baise{
+            background-color:white;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .ma8{
+            margin: 8px;
+        }
+        .mar8{
+            margin-right:8px;
+        }
+        .mat8{
+            margin: 8px;
+        }
+        .daohang{
+            padding: 20px;
+            border-bottom: solid 1px rgb(194, 191, 191);
+        }
+        /*当屏幕为手机的时*/
+        @media(max-width:600px)
+        {
+            .cebian{
+                display: none;
+            }
+            .neirong{
+                 flex-direction:column;
+            }
+            .shujuqu{
+                flex-direction: column;
+            }
+            .youqu{
+                margin-left: 8px;
+            }
+            .shuju{
+                margin:0 0 8px;
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+<body class="flex"> 
+   <!--侧边栏-->
+   <div style="width: 200px; z-index: 2;" class="baise ma8 yinyin cebian">
+       <!--头像栏-->
+       <div style="padding:20px;align-items:center;justify-content:center;border-bottom:1px solid gray;background-image:url('https://pic3.zhimg.com/v2-c5544169237bf327f29f4ba91ce0ac46_r.jpg?source=1940ef5c');"class="flex";>
+         <img src="https://ts1.cn.mm.bing.net/th/id/R-C.a7e62ba5fc317e589371792cc675655e?rik=arfIX11%2bLzLzhA&riu=http%3a%2f%2fimg.ewebweb.com%2fuploads%2f20200303%2f18%2f1583232931-NsQyqXmLKB.jpg&ehk=WElry2bNVzUNCgYPDtTxbF5ez9AfPDAoZaEC8%2fwdCio%3d&risl=&pid=ImgRaw&r=0"
+         width="40px"
+         height="40px"
+         >
+         <div style="margin-left:10px;">杨舒翔</div>
+        </div>
+       <!--导航栏-->
+       <div class="flex1">
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        </div>
+    </div>
+   <!--主区域-->
+   <div class="flex flex1 column">
+      <!--头部栏-->
+      <div style="height: 60px; z-index: 1;" class="baise"></div>
+      <!--内容栏-->
+      <div style="overflow:auto" class="flex1 flex yinyin neirong">
+        <!--左区-->
+        <div style="flex: 3" class="flex column ma8">
+            <!--数据区-->
+            <div class="flex yinyin shujuqu">
+                <!--数据块-->
+                <div style="height: 100px" class="baise flex1 mar8 yinyin shuju"></div>
+                <div style="height: 100px" class="baise flex1 mar8 yinyin shuju"></div>
+                <div style="height: 100px" class="baise flex1 mar8 yinyin shuju"></div>
+                <div style="height: 100px" class="baise flex1 mar8 yinyin shuju"></div>
+            </div>
+            <!--列表区-->
+            <div class="flex column">
+                <!--列表项-->
+                <div style="height: 160px" class="baise mat8 yinyin"></div>
+                <div style="height: 160px" class="baise mat8 yinyin"></div>
+                <div style="height: 160px" class="baise mat8 yinyin"></div>
+                <div style="height: 160px" class="baise mat8 yinyin"></div>
+                <div style="height: 160px" class="baise mat8 yinyin"></div>
+                <div style="height: 160px" class="baise mat8 yinyin"></div>
+            </div>
+        </div>
+        <!--右区-->
+        <div style="flex: 1" class="flex column mar8 mat8 youqu">
+            <!--提示区-->
+            <div style="height: 150px" class="baise yinyin">
+            </div>
+            <!--消息区-->
+            <div style="height: 300px" class="baise mat8 yinyin">
+            </div>
+        </div>
+      </div>
+   </div>
+</body>
+</html>
